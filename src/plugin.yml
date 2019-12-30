@@ -1,0 +1,6 @@
+name: SurvivalEmpire
+authors:
+  - CRAFTagain
+  - alpharout
+version: 0.01
+main: de.craftagain.survivalempire.main.SurvivalEmpire
