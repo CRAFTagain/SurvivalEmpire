@@ -4,3 +4,23 @@ authors:
   - alpharout
 version: 0.01
 main: de.craftagain.survivalempire.main.SurvivalEmpire
+
+commands:
+  lobby:
+    usage: /lobby
+    aliases: l
+    description: Teleportiert dich in die Lobby
+
+  setLevel:
+    usage: /setLevel <Spieler> <Level>
+    aliases: setlvl
+    description: Legt das Level eines Spielers fest
+    permission: SurvivalEmpire.lvl
+    permission-message: §4Du hast nicht die Berechtigung diesen Befehl auszuführen!
+
+  getLevel:
+    usage: /getLevel <Spieler>
+    aliases: getlvl
+    description: Gibt das Level des Spielers zurück
+    permission: SurvivalEmpire.lvl
+    permission-message: §4Du hast nicht die Berechtigung diesen Befehl auszuführen!
