@@ -27,6 +27,7 @@ public class ScoreboardManager {
 
         obj.getScore("§7Level:").setScore(5);
         obj.getScore("§a").setScore(4);
+        obj.getScore("§7SE-Coins:").setScore(3);
 
         player.setScoreboard(board);
 

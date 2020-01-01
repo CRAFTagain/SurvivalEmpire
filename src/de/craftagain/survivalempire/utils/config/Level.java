@@ -30,4 +30,37 @@ public class Level {
             return 0;
     }
 
+    public static void addXP(Player player, int xp) throws IOException {
+        if(config.isSet(player.getName() + ".xp")){
+            config.set(player.getName() + ".xp", (int)config.get(player.getName() + ".xp") + xp);
+        }else{
+            config.set(player.getName() + ".xp", xp);
+        }
+        save();
+    }
+
+    public static int getXP(Player player){
+        if(config.isSet(player.getName() + ".xp")){
+        return (int)config.get(player.getName() + ".xp");
+        } else
+            return 0;
+    }
+
+    public static void addXPToGoal(Player player) throws IOException {
+        if(config.isSet(player.getName() + ".xpGoal")){
+            config.set(player.getName() + ".xpGoal", (int)config.get(player.getName() + ".xpGoal") + 20);
+        }else
+        {
+            config.set(player.getName() + ".xpGoal", 20);
+        }
+        save();
+    }
+
+    public static int getXPGoal(Player player){
+        if(config.isSet(player.getName() + ".xpGoal")){
+            return (int)config.get(player.getName() + ".xpGoal");
+        }else
+            return 20;
+    }
+
 }
